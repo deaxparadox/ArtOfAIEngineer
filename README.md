@@ -28,34 +28,36 @@ You can jump to any topic, but if something isn't clicking, go back to its prere
 
 ## The Roadmap
 
-```
-PHASE 1 — ML Foundations
-PHASE 2 — Deep Learning
-PHASE 3 — Large Language Models
-PHASE 4 — Prompt Engineering
-PHASE 5 — Building with LLM APIs
-PHASE 6 — Embeddings & Semantic Search
-PHASE 7 — RAG (Retrieval-Augmented Generation)
-PHASE 8 — Tool Use & AI Agents
-PHASE 9 — Evals & Quality
-PHASE 10 — MLOps & Production AI
-PHASE 11 — Fine-Tuning
-PHASE 12 — Deployment & Infrastructure
-```
+| Phase | Topic | Status |
+|---|---|---|
+| [Phase 1](./phase-1-ml-foundations/README.md) | ML Foundations | ✅ Complete |
+| [Phase 2](./phase-2-deep-learning/README.md) | Deep Learning | ✅ Complete |
+| [Phase 3](./phase-3-large-language-models/README.md) | Large Language Models | ✅ Complete |
+| [Phase 4](./phase-4-prompt-engineering/README.md) | Prompt Engineering | ✅ Complete |
+| [Phase 5](./phase-5-building-with-llm-apis/README.md) | Building with LLM APIs | ✅ Complete |
+| [Phase 6](./phase-6-embeddings-semantic-search/README.md) | Embeddings & Semantic Search | ✅ Complete |
+| [Phase 7](./phase-7-rag/README.md) | RAG (Retrieval-Augmented Generation) | ✅ Complete |
+| [Phase 8](./phase-8-tool-use-agents/README.md) | Tool Use & AI Agents | ✅ Complete |
+| [Phase 9](./phase-9-evals-quality/README.md) | Evals & Quality | ✅ Complete |
+| [Phase 10](./phase-10-mlops-production/README.md) | MLOps & Production AI | ✅ Complete |
+| [Phase 11](./phase-11-fine-tuning/README.md) | Fine-Tuning | ✅ Complete |
+| [Phase 12](./phase-12-deployment-infrastructure/README.md) | Deployment & Infrastructure | ✅ Complete |
 
 ---
 
 ## Phase 1 — ML Foundations
 
 > What you need to understand before any of this makes sense.
+>
+> → **[Full Phase 1 content with all sections](./phase-1-ml-foundations/README.md)**
 
 | Topic | What You'll Learn |
 |---|---|
-| 1.1 What is machine learning? | Types and taxonomy: supervised, unsupervised, reinforcement |
-| 1.2 How neural networks learn | Forward pass, loss functions, backpropagation |
-| 1.3 Gradient descent & optimizers | SGD, Adam, AdamW — why they exist and when they fail |
-| 1.4 Overfitting & evaluation | Regularization, train/val/test splits, precision/recall/F1 |
-| 1.5 ML → Deep Learning | How scale and data changed what's possible |
+| [1.1 What is machine learning?](./phase-1-ml-foundations/1.1-what-is-machine-learning.md) | Types and taxonomy: supervised, unsupervised, reinforcement |
+| [1.2 How neural networks learn](./phase-1-ml-foundations/1.2-how-neural-networks-learn.md) | Forward pass, loss functions, backpropagation |
+| [1.3 Gradient descent & optimizers](./phase-1-ml-foundations/1.3-gradient-descent-and-optimizers.md) | SGD, Adam, AdamW — why they exist and when they fail |
+| [1.4 Overfitting & evaluation](./phase-1-ml-foundations/1.4-overfitting-regularization-evaluation.md) | Regularization, train/val/test splits, precision/recall/F1 |
+| [1.5 ML → Deep Learning](./phase-1-ml-foundations/1.5-path-to-deep-learning.md) | How scale and data changed what's possible |
 
 **Key insight:** You don't need to implement backprop from scratch. You need to understand it well enough to know *why* your training loss is behaving the way it is.
 
@@ -69,14 +71,16 @@ PHASE 12 — Deployment & Infrastructure
 ## Phase 2 — Deep Learning
 
 > The architectural building blocks that everything else is built on.
+>
+> → **[Full Phase 2 content with all sections](./phase-2-deep-learning/README.md)**
 
 | Topic | What You'll Learn |
 |---|---|
-| 2.1 CNNs | Convolutional layers, pooling, image feature extraction |
-| 2.2 RNNs & LSTMs | Sequential data, memory, the vanishing gradient problem |
-| 2.3 The Attention Mechanism | The idea that broke everything open in 2017 |
-| 2.4 The Transformer Architecture | Encoder, decoder, multi-head attention, positional encoding |
-| 2.5 Transfer Learning | Why fine-tuning pre-trained models beats training from scratch |
+| [2.1 CNNs](./phase-2-deep-learning/2.1-cnns-convolutional-neural-networks.md) | Convolutional layers, pooling, residual connections, image understanding |
+| [2.2 RNNs & LSTMs](./phase-2-deep-learning/2.2-rnns-and-lstms.md) | Sequential data, memory gates, vanishing gradients, when LSTMs still matter |
+| [2.3 Attention Mechanism](./phase-2-deep-learning/2.3-attention-mechanism.md) | Q/K/V, scaled dot-product, multi-head, causal masking |
+| [2.4 Transformer Architecture](./phase-2-deep-learning/2.4-transformer-architecture.md) | Full architecture deep dive, encoder vs decoder, FFN as memory, positional encoding |
+| [2.5 Transfer Learning](./phase-2-deep-learning/2.5-transfer-learning-and-fine-tuning.md) | Pre-trained models, fine-tuning strategies, when to fine-tune vs prompt |
 
 **Key insight:** Read the original "Attention Is All You Need" paper (Vaswani et al., 2017). Not because you'll implement it, but because understanding *why* transformers replaced RNNs tells you exactly what LLMs are good and bad at.
 
@@ -90,15 +94,17 @@ PHASE 12 — Deployment & Infrastructure
 ## Phase 3 — Large Language Models
 
 > How LLMs are built, what they actually are, and why they behave the way they do.
+>
+> → **[Full Phase 3 content with all sections](./phase-3-large-language-models/README.md)**
 
 | Topic | What You'll Learn |
 |---|---|
-| 3.1 Pre-training at scale | How LLMs learn to predict text on trillions of tokens |
-| 3.2 Alignment: SFT, RLHF, DPO | How raw models become useful assistants |
-| 3.3 Tokenization | BPE, WordPiece — how text becomes numbers (and why this causes bugs) |
-| 3.4 Context windows & KV-cache | Why context size matters, what KV-cache is, memory tradeoffs |
-| 3.5 Hallucinations | Root causes, why they're structural, mitigation strategies |
-| 3.6 Scaling laws & emergence | Why bigger models behave qualitatively differently |
+| [3.1 Pre-training at scale](./phase-3-large-language-models/3.1-pretraining-at-scale.md) | Data pipelines, training objective, distributed training, base vs instruct models |
+| [3.2 Alignment: SFT, RLHF, DPO](./phase-3-large-language-models/3.2-alignment-sft-rlhf-dpo.md) | Full post-training pipeline, DPO vs RLHF, RLVR for reasoning |
+| [3.3 Tokenization](./phase-3-large-language-models/3.3-tokenization.md) | BPE algorithm, why models fail at letter counting, token costs, chat templates |
+| [3.4 Context windows & KV-cache](./phase-3-large-language-models/3.4-context-windows-kv-cache.md) | KV-cache memory math, lost-in-the-middle, prompt caching, serving strategies |
+| [3.5 Hallucinations](./phase-3-large-language-models/3.5-hallucinations.md) | Root causes, taxonomy, RAG + tool use + citation requirements as defense |
+| [3.6 Scaling laws & emergence](./phase-3-large-language-models/3.6-scaling-laws-and-emergence.md) | Kaplan, Chinchilla, inference scaling, emergent capabilities |
 
 **Key insight:** Hallucinations aren't bugs — they're a structural property of how LLMs work. An LLM is a next-token predictor trained to be *plausible*, not *correct*. Understanding this is the difference between an engineer who blames the model and one who builds systems that compensate for it.
 
@@ -123,14 +129,16 @@ PHASE 12 — Deployment & Infrastructure
 ## Phase 4 — Prompt Engineering
 
 > The craft of talking to LLMs in a way that gets reliable results.
+>
+> → **[Full Phase 4 content with all sections](./phase-4-prompt-engineering/README.md)**
 
 | Topic | What You'll Learn |
 |---|---|
-| 4.1 Prompt anatomy | System prompt, user turn, assistant turn, message structure |
-| 4.2 Prompting techniques | Zero-shot, few-shot, chain-of-thought, self-consistency |
-| 4.3 Structured output | JSON mode, tool calls, forcing schema-compliant output |
-| 4.4 Failure mode diagnosis | Why prompts fail and how to systematically debug them |
-| 4.5 Prompt security | Injection attacks, jailbreaks, input sanitization |
+| [4.1 Prompt anatomy](./phase-4-prompt-engineering/4.1-prompt-anatomy.md) | System/user/assistant turns, assistant prefill, authority hierarchy, production templates |
+| [4.2 Few-shot, CoT & structured prompting](./phase-4-prompt-engineering/4.2-few-shot-cot-structured-prompting.md) | Few-shot, chain-of-thought, self-consistency, dynamic few-shot, XML structure |
+| [4.3 Output formatting](./phase-4-prompt-engineering/4.3-output-formatting-json-tools.md) | JSON schema enforcement, tool calls, Pydantic + Instructor, streaming structured output |
+| [4.4 Failure modes & debugging](./phase-4-prompt-engineering/4.4-failure-modes-and-debugging.md) | 7-category failure taxonomy, bisect method, eval suites, consistency testing |
+| [4.5 Prompt injection & defense](./phase-4-prompt-engineering/4.5-prompt-injection-and-defense.md) | OWASP LLM Top 10, direct/indirect injection, defense-in-depth, safe agent patterns |
 
 **Key insight:** Prompt engineering is not "writing magic words." It's specifying behavior precisely enough that the model's training distribution aligns with what you want. If your prompt looks like instructions you'd give an intern, you're on the right track. If it looks like an incantation, you're going to have a bad time in production.
 
@@ -156,15 +164,17 @@ then give your final answer."""
 ## Phase 5 — Building with LLM APIs
 
 > Writing production code against AI provider APIs.
+>
+> → **[Full Phase 5 content with all sections](./phase-5-building-with-llm-apis/README.md)**
 
 | Topic | What You'll Learn |
 |---|---|
-| 5.1 Provider APIs | Anthropic SDK, OpenAI SDK, Gemini SDK — real usage patterns |
-| 5.2 Streaming | Server-sent events, async generators, UI streaming patterns |
-| 5.3 Token counting & cost | Counting tokens before sending, estimating costs, budget guardrails |
-| 5.4 Prompt caching | When to cache, how it works, the savings you can expect |
-| 5.5 Errors & retries | Rate limit handling, exponential backoff, fallback providers |
-| 5.6 Multimodal | Sending images, PDFs, audio — what the APIs actually support |
+| [5.1 Provider APIs](./phase-5-building-with-llm-apis/5.1-provider-apis.md) | Anthropic/OpenAI/Gemini SDKs, model routing, batch API, pricing comparison 2026 |
+| [5.2 Streaming & async](./phase-5-building-with-llm-apis/5.2-streaming-and-async.md) | SSE mechanics, async FastAPI streaming, concurrent requests, TTFT optimization |
+| [5.3 Token counting & cost](./phase-5-building-with-llm-apis/5.3-token-counting-and-cost.md) | Per-user attribution, budget enforcement, cost projection, 6 optimization levers |
+| [5.4 Prompt caching](./phase-5-building-with-llm-apis/5.4-prompt-caching.md) | Anthropic/OpenAI/Google caching, 50–90% savings, stable prefix design |
+| [5.5 Errors & retries](./phase-5-building-with-llm-apis/5.5-errors-retries-rate-limits.md) | Jitter backoff, circuit breakers, multi-provider fallback, thundering herd |
+| [5.6 Multimodal](./phase-5-building-with-llm-apis/5.6-multimodal.md) | Images, PDFs, audio APIs — cost, optimization, caching, batch processing |
 
 **Key insight:** The thing that will bite you in production isn't the AI part — it's the infrastructure part. Rate limits hit at the worst time. Streaming breaks in ways that are hard to reproduce. Token costs scale non-linearly with context. Build for these from day one.
 
@@ -214,15 +224,17 @@ def stream_claude(system: str, user: str):
 ## Phase 6 — Embeddings & Semantic Search
 
 > Making text searchable by meaning, not just keyword matching.
+>
+> → **[Full Phase 6 content with all sections](./phase-6-embeddings-semantic-search/README.md)**
 
 | Topic | What You'll Learn |
 |---|---|
-| 6.1 What are embeddings? | From tokens to vectors — what they represent and why |
-| 6.2 Embedding models | Choosing between providers and open-source options |
-| 6.3 Similarity search | Cosine similarity, dot product, Euclidean distance |
-| 6.4 Vector databases | Pinecone, Weaviate, Qdrant, Chroma, pgvector |
-| 6.5 Chunking strategies | Character, token, sentence, semantic — which to use when |
-| 6.6 Hybrid search | Combining dense vector search with BM25 keyword search |
+| [6.1 What are embeddings?](./phase-6-embeddings-semantic-search/6.1-what-are-embeddings.md) | Meaning as vectors, contextual vs static, contrastive training, dimensionality |
+| [6.2 Embedding models](./phase-6-embeddings-semantic-search/6.2-embedding-models.md) | Voyage/OpenAI/Cohere/BGE comparison, MTEB, asymmetric models, offline evaluation |
+| [6.3 Similarity search](./phase-6-embeddings-semantic-search/6.3-similarity-search.md) | Cosine vs dot product, ANN algorithms (HNSW/IVF), recall-latency tradeoff |
+| [6.4 Vector databases](./phase-6-embeddings-semantic-search/6.4-vector-databases.md) | Qdrant/pgvector/Pinecone/Weaviate — decision framework, full code examples |
+| [6.5 Chunking strategies](./phase-6-embeddings-semantic-search/6.5-chunking-strategies.md) | Recursive splitting, semantic, parent-child, per-document-type guidance |
+| [6.6 Hybrid search](./phase-6-embeddings-semantic-search/6.6-hybrid-search.md) | BM25 + dense, RRF fusion, dynamic alpha, reranking pipeline |
 
 **Key insight:** The chunking strategy is the most underestimated decision in any RAG system. Naive fixed-size chunking with overlap works in demos and fails in production when your documents have complex structure. Invest in this early.
 
@@ -252,15 +264,17 @@ def stream_claude(system: str, user: str):
 ## Phase 7 — RAG (Retrieval-Augmented Generation)
 
 > The most important pattern in production AI engineering right now.
+>
+> → **[Full Phase 7 content with all sections](./phase-7-rag/README.md)**
 
 | Topic | What You'll Learn |
 |---|---|
-| 7.1 RAG fundamentals | Why it exists: grounding LLMs in real, current, private data |
-| 7.2 Naive RAG | The basic pipeline: embed → store → retrieve → generate |
-| 7.3 Advanced RAG | Reranking, query expansion, HyDE, multi-query |
-| 7.4 Agentic RAG | When retrieval is a tool the agent calls, not a fixed pipeline step |
-| 7.5 RAG evaluation | Context precision, context recall, answer faithfulness, answer relevance |
-| 7.6 RAG failure modes | The 7 ways RAG fails in production and how to fix each |
+| [7.1 RAG fundamentals](./phase-7-rag/7.1-rag-fundamentals.md) | When RAG, when not, two-phase architecture, decision framework |
+| [7.2 Naive RAG](./phase-7-rag/7.2-naive-rag.md) | Complete indexing pipeline, query pipeline, citation patterns |
+| [7.3 Advanced RAG](./phase-7-rag/7.3-advanced-rag.md) | Reranking, multi-query, HyDE, contextual compression — ROI per technique |
+| [7.4 Agentic RAG](./phase-7-rag/7.4-agentic-rag.md) | Retrieval as tool call, multi-source routing, iteration limits |
+| [7.5 RAG evaluation](./phase-7-rag/7.5-rag-evaluation.md) | RAGAS metrics, eval dataset design, LLM-as-judge, continuous monitoring |
+| [7.6 RAG failure modes](./phase-7-rag/7.6-rag-failure-modes.md) | 10-mode diagnostic framework with targeted code fixes |
 
 **The naive RAG pipeline:**
 
@@ -312,15 +326,17 @@ Response to user
 ## Phase 8 — Tool Use & AI Agents
 
 > Building systems where LLMs take actions, not just generate text.
+>
+> → **[Full Phase 8 content with all sections](./phase-8-tool-use-agents/README.md)**
 
 | Topic | What You'll Learn |
 |---|---|
-| 8.1 Function calling | How tool use works under the hood, the API mechanics |
-| 8.2 Designing good tools | Tool schemas, descriptions that the model can actually use |
-| 8.3 Single-agent patterns | ReAct (Reason + Act), Plan-and-Execute |
-| 8.4 Multi-agent systems | Orchestrator-subagent patterns, handoffs, shared state |
-| 8.5 Agent memory | In-context, external DB, episodic memory patterns |
-| 8.6 When agents fail | Failure modes, guardrails, kill switches, human-in-the-loop |
+| [8.1 Function calling & tool use](./phase-8-tool-use-agents/8.1-function-calling-tool-use.md) | Full tool-use loop, parallel calls, tool_choice forcing, MCP |
+| [8.2 Designing good tools](./phase-8-tool-use-agents/8.2-designing-good-tools.md) | Names, descriptions, schemas, confirmation patterns, tool set design |
+| [8.3 Single-agent patterns](./phase-8-tool-use-agents/8.3-single-agent-patterns.md) | ReAct + Reflexion, Plan-and-Execute, when to use each |
+| [8.4 Multi-agent systems](./phase-8-tool-use-agents/8.4-multi-agent-systems.md) | Orchestrator-worker, handoffs, parallel execution, LangGraph |
+| [8.5 Agent memory](./phase-8-tool-use-agents/8.5-agent-memory.md) | Short-term window, long-term semantic store, episodic memory |
+| [8.6 Failure modes & guardrails](./phase-8-tool-use-agents/8.6-agent-failure-modes-guardrails.md) | 8-mode taxonomy, defense-in-depth guardrail architecture |
 
 **Key insight:** Agents are powerful and unreliable in equal measure. The difference between a demo and a production agent is: error handling, state management, cost bounds, and knowing when to ask a human. If your agent can take irreversible actions (send email, write to DB, call APIs), you need explicit confirmation steps before those actions.
 
@@ -394,16 +410,18 @@ def run_agent(user_message: str) -> str:
 
 ## Phase 9 — Evals & Quality
 
-> The hardest part of AI engineering, and the part most teams skip until it burns them.
+> The discipline that separates AI engineering from AI experimentation.
+>
+> → **[Full Phase 9 content with all sections](./phase-9-evals-quality/README.md)**
 
 | Topic | What You'll Learn |
 |---|---|
-| 9.1 Why evals are hard | Non-determinism, subjective quality, the "it depends" problem |
-| 9.2 Types of evals | Unit evals, integration evals, human eval, LLM-as-judge |
-| 9.3 Building eval datasets | What makes a good eval set and what makes a useless one |
-| 9.4 LLM-as-judge | How to set it up, where it works, where it lies to you |
-| 9.5 Regression testing | Testing non-deterministic systems — the surprisingly solvable problem |
-| 9.6 Observability | Tracing, logging, cost tracking for production AI systems |
+| [9.1 Why evals are hard](./phase-9-evals-quality/9.1-why-evals-are-hard.md) | 6 core challenges, maturity ladder, the eval-investment math |
+| [9.2 Types of evals](./phase-9-evals-quality/9.2-types-of-evals.md) | Deterministic/statistical/human/LLM-judge — the eval pyramid |
+| [9.3 Building eval datasets](./phase-9-evals-quality/9.3-building-eval-datasets.md) | 5 sources, composition guidelines, versioning, canary cases |
+| [9.4 LLM-as-judge](./phase-9-evals-quality/9.4-llm-as-judge.md) | Bias taxonomy, pairwise comparison, calibration, CoT judging |
+| [9.5 Regression testing](./phase-9-evals-quality/9.5-regression-testing.md) | Statistical tests, GitHub Actions CI/CD gate, pytest integration |
+| [9.6 Tracing & observability](./phase-9-evals-quality/9.6-tracing-and-observability.md) | Langfuse/Helicone/LangSmith setup, cost alerting, dashboards |
 
 **Key insight:** You cannot improve what you cannot measure. Every AI team that skips evals early spends 3x longer fixing problems later because they have no way to tell if a change made things better or worse. Build your eval harness before you build your feature.
 
@@ -424,15 +442,17 @@ def run_agent(user_message: str) -> str:
 ## Phase 10 — MLOps & Production AI
 
 > Running AI systems in production without waking up to alerts at 3am.
+>
+> → **[Full Phase 10 content with all sections](./phase-10-mlops-production/README.md)**
 
 | Topic | What You'll Learn |
 |---|---|
-| 10.1 Experiment tracking | MLflow, W&B, Comet — tracking runs, params, metrics |
-| 10.2 Model registries | Versioning models, promoting between environments |
-| 10.3 Training data management | Feature stores, lineage, versioning training data |
-| 10.4 CI/CD for ML | Testing ML code, staging, deployment gates |
-| 10.5 Model monitoring | Drift detection, performance degradation, anomaly detection |
-| 10.6 A/B testing AI | How to run controlled experiments on AI features |
+| [10.1 Experiment tracking](./phase-10-mlops-production/10.1-experiment-tracking.md) | MLflow 3.0 GenAI features, W&B sweeps, prompt versioning |
+| [10.2 Model registries](./phase-10-mlops-production/10.2-model-registries-versioning.md) | Semantic versioning, blue-green deployment, DVC for artifacts |
+| [10.3 Training data management](./phase-10-mlops-production/10.3-feature-stores-training-data.md) | Versioned datasets, quality validation, feature stores |
+| [10.4 CI/CD for ML](./phase-10-mlops-production/10.4-cicd-for-ml.md) | Four-gate pipeline, GitHub Actions YAML, eval gates, canary deploy |
+| [10.5 Model monitoring](./phase-10-mlops-production/10.5-model-monitoring.md) | Five drift types, Page-Hinkley detection, cost + quality alerts |
+| [10.6 A/B testing AI](./phase-10-mlops-production/10.6-ab-testing-ai-features.md) | Sample size calculation, statistical analysis, guardrail metrics |
 
 **The three things that go wrong in production AI:**
 1. **Data drift** — the real-world data distribution shifted and your model doesn't know
@@ -446,15 +466,17 @@ All three require monitoring to catch. None of them are caught by unit tests.
 ## Phase 11 — Fine-Tuning
 
 > When prompt engineering isn't enough and you need the model to learn from your data.
+>
+> → **[Full Phase 11 content with all sections](./phase-11-fine-tuning/README.md)**
 
 | Topic | What You'll Learn |
 |---|---|
-| 11.1 When to fine-tune | The honest answer: usually later than you think |
-| 11.2 Supervised fine-tuning (SFT) | The data format, the training process, the compute requirements |
-| 11.3 LoRA & QLoRA | Parameter-efficient fine-tuning — the technique that made fine-tuning accessible |
-| 11.4 API fine-tuning | OpenAI, Anthropic, and others — managed fine-tuning without GPUs |
-| 11.5 Evaluating fine-tuned models | Is your fine-tuned model actually better? How to know. |
-| 11.6 Fine-tuning failure modes | The dataset size myth, catastrophic forgetting, overfitting |
+| [11.1 When to fine-tune](./phase-11-fine-tuning/11.1-when-to-fine-tune.md) | Decision framework: prompting → RAG → fine-tune; what fine-tuning can't fix |
+| [11.2 Supervised fine-tuning](./phase-11-fine-tuning/11.2-supervised-fine-tuning.md) | Loss masking, chat templates, data prep pipeline, quality over quantity |
+| [11.3 LoRA & QLoRA](./phase-11-fine-tuning/11.3-lora-and-qlora.md) | Low-rank adaptation math, 4-bit quantization, GPU requirements, Axolotl config |
+| [11.4 API fine-tuning](./phase-11-fine-tuning/11.4-fine-tuning-apis.md) | OpenAI + Together AI APIs, cost estimation, weights ownership |
+| [11.5 Evaluating fine-tuned models](./phase-11-fine-tuning/11.5-evaluating-fine-tuned-models.md) | Baseline comparison, forgetting check, training curve analysis |
+| [11.6 Fine-tuning failures](./phase-11-fine-tuning/11.6-fine-tuning-failures.md) | 6 failure modes with diagnostics: insufficient data, inconsistent labels, forgetting |
 
 **Key insight:** Fine-tune for style/format/domain adaptation. Don't fine-tune to add knowledge (use RAG for that). The most common fine-tuning mistake is treating it as a shortcut for prompt engineering. It isn't. You need at minimum hundreds, preferably thousands of high-quality examples.
 
@@ -473,15 +495,17 @@ All three require monitoring to catch. None of them are caught by unit tests.
 ## Phase 12 — Deployment & Infrastructure
 
 > Getting models into production and keeping them there.
+>
+> → **[Full Phase 12 content with all sections](./phase-12-deployment-infrastructure/README.md)**
 
 | Topic | What You'll Learn |
 |---|---|
-| 12.1 Model serving | vLLM, TorchServe, Triton — the tradeoffs |
-| 12.2 GPU memory & throughput | KV-cache, paged attention, batching strategies |
-| 12.3 Quantization | INT8, INT4, GPTQ, AWQ — speed/quality tradeoffs |
-| 12.4 Distributed inference | Tensor parallelism, pipeline parallelism |
-| 12.5 Latency vs throughput | When to optimize for which — they pull in opposite directions |
-| 12.6 Cost optimization | Caching, batching, model routing, dynamic model selection |
+| [12.1 Model serving](./phase-12-deployment-infrastructure/12.1-model-serving-frameworks.md) | vLLM, SGLang, Triton — production setup, OpenAI-compatible API |
+| [12.2 GPU memory & batching](./phase-12-deployment-infrastructure/12.2-gpu-memory-batching-throughput.md) | PagedAttention, continuous batching, throughput benchmarking |
+| [12.3 Quantization](./phase-12-deployment-infrastructure/12.3-quantization.md) | INT8, INT4, FP8, GPTQ vs AWQ — quality trade-off tables |
+| [12.4 Distributed inference](./phase-12-deployment-infrastructure/12.4-distributed-inference.md) | Tensor parallelism, pipeline parallelism, speculative decoding |
+| [12.5 Latency vs throughput](./phase-12-deployment-infrastructure/12.5-latency-vs-throughput.md) | TTFT vs TBT, SLA configuration, tail latency, priority queues |
+| [12.6 Cost optimization](./phase-12-deployment-infrastructure/12.6-cost-optimization.md) | Prefix caching, semantic cache, model routing, 6-layer cost stack |
 
 **Self-Hosting vs Managed API:**
 
